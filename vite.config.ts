@@ -11,9 +11,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: 'シンプル割り勘',
-        short_name: '割り勘',
-        description: '2人での生活費の割り勘を記録・精算するシンプルなアプリ',
+        name: 'シンプル生活費精算',
+        short_name: '生活費精算',
+        description: '2人の生活費を記録して月ごとに精算するシンプルなアプリ',
         lang: 'ja',
         theme_color: '#3478f6',
         background_color: '#ffffff',

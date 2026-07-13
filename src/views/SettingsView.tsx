@@ -18,7 +18,7 @@ export function SettingsView() {
     const a = document.createElement("a");
     const today = new Date().toISOString().slice(0, 10);
     a.href = url;
-    a.download = `simple-warikan-${today}.json`;
+    a.download = `seikatsuhi-seisan-${today}.json`;
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -137,7 +137,7 @@ export function SettingsView() {
       <div className="section">
         <p className="section-label">アプリについて</p>
         <div className="card about-text">
-          <p style={{ margin: 0 }}>シンプル割り勘（Web版） v{APP_VERSION}</p>
+          <p style={{ margin: 0 }}>シンプル生活費精算 v{APP_VERSION}</p>
           <p style={{ margin: "6px 0 0" }}>
             データはこの端末のブラウザ内にのみ保存されます。サーバーへの送信やアカウント登録はありません。
           </p>
