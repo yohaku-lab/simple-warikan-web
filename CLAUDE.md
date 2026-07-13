@@ -1,6 +1,12 @@
-# simple-warikan-web（シンプル割り勘 Web版）
+# simple-warikan-web（シンプル生活費精算）
 
 2人（カップル・夫婦を想定）で家賃・光熱費など生活費を割り勘するための、記録して月ごとに精算するだけのシンプルなWebアプリ。iOSネイティブアプリ `../simple-warikan` のWeb移植版。Vite + React + TypeScriptの完全静的サイトで、サーバー・アカウントなし、自分の端末のブラウザ（localStorage）だけにデータを保持する。
+
+## アプリ名について
+
+- ユーザー向けの名称は**「シンプル生活費精算」**（ホーム画面表示は「生活費精算」）。2026-07-14に「シンプル割り勘」から改名した — 姉妹アプリ「シンプル傾斜割り勘」と紛らわしかったため。
+- リポジトリ名・ディレクトリ名（`simple-warikan-web`）とlocalStorageキー（`simple-warikan:store`・`simple-warikan:install-hint-dismissed`）は**旧名のまま意図的に維持**している。特にlocalStorageキーを変えると公開済みユーザーの既存データが読めなくなるので、改名に追随させないこと。
+- 名称を変える場合の変更箇所: `index.html`（title・description・apple-mobile-web-app-title）、`vite.config.ts`（PWA manifest）、`SettingsView`（アプリについて欄・エクスポートのファイル名）。
 
 ## iOS版との関係
 
