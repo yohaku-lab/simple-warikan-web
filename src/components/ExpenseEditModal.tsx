@@ -83,7 +83,7 @@ export function ExpenseEditModal({ expense, defaultDate, partnerName, onClose, o
 
         <div className="field">
           <span className="field-label">負担割合</span>
-          <ShareSlider value={selfSharePercent} onChange={setSelfSharePercent} partnerName={partnerName} />
+          <ShareSlider value={selfSharePercent} onChange={setSelfSharePercent} partnerName={partnerName} amount={amount} />
           <p className="settings-section-footer">
             誰が支払ったかに関わらず、本来どちらがどれだけ負担すべきかの割合です。
           </p>

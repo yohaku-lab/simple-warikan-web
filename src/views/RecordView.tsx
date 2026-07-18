@@ -66,6 +66,7 @@ export function RecordView() {
           value={selfSharePercent}
           onChange={(percent) => updateSettings({ lastSharePercent: percent })}
           partnerName={partnerName}
+          amount={amount}
         />
       </div>
 
