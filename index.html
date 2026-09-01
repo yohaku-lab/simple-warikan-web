@@ -6,12 +6,101 @@
     <link rel="apple-touch-icon" href="/icon-192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#3478f6" />
-    <meta name="description" content="2人の生活費を記録して月ごとに精算するシンプルなアプリ" />
     <meta name="apple-mobile-web-app-title" content="生活費精算" />
-    <title>シンプル生活費精算</title>
+    <title>ふたりの生活費精算｜立て替えを記録して月末に清算する</title>
+    <meta
+      name="description"
+      content="同棲・ふたり暮らしの生活費を、立て替えた人と金額だけ記録して、月末にどちらがいくら渡せばいいかを出すツールです。項目ごとに負担割合を変えられます。登録不要・無料、記録は端末の外に出ません。"
+    />
+    <link rel="canonical" href="https://warikan.yohakulab.app/" />
   </head>
   <body>
     <div id="root"></div>
+
+    <!--
+      ここから下は静的なHTMLです。JavaScriptを実行しなくても読める本文として置いています。
+    -->
+    <div class="doc">
+      <section>
+        <h2>「今月どっちが多く出した？」を数えなくていい</h2>
+        <p>
+          ふたりで暮らしていると、家賃はどちらか、食材はその日買った人、
+          日用品はまた別の人……と立て替えが行き来します。
+          月末になって思い出そうとしても、もう分かりません。
+        </p>
+        <p>
+          このツールは、<strong>立て替えたときに金額と払った人を記録しておくだけ</strong>で、
+          月末に「どちらがいくら渡せば釣り合うか」を1つの金額で出します。
+        </p>
+      </section>
+
+      <section>
+        <h2>使い方</h2>
+        <ol class="doc-steps">
+          <li>お金を出したら、<strong>金額と払った人</strong>を記録します。</li>
+          <li>
+            折半でないものは、その場で<strong>負担の割合</strong>を変えられます。
+            家賃だけ7：3、食費は折半、といった使い分けができます。
+          </li>
+          <li>
+            月末に<strong>精算のタブ</strong>を開くと、どちらがいくら渡すかが出ます。
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>負担の割合をどう決めるか</h2>
+        <p>
+          分け方に唯一の正解はありません。よく使われるのは次の3つです。
+        </p>
+        <ul class="doc-list">
+          <li>
+            <strong>折半</strong> — いちばん単純で、収入が近いふたりに向きます。
+          </li>
+          <li>
+            <strong>収入の比で分ける</strong> — 収入差が大きい場合に、
+            手取りの比率で負担を決める方法です。
+          </li>
+          <li>
+            <strong>項目ごとに決める</strong> — 家賃は収入比、食費は折半、
+            趣味のものは各自、といった組み合わせです。
+          </li>
+        </ul>
+        <p>
+          このツールは記録ごとに割合を変えられるので、3つのどれでも、途中で変えても使えます。
+          考え方は
+          <a href="https://yohakulab.app/blog/splitting-living-costs-with-income-gap/"
+            >収入差があるふたり暮らしの生活費の分け方</a
+          >
+          で詳しく書いています。
+        </p>
+      </section>
+
+      <section>
+        <h2>金額の扱い</h2>
+        <p>
+          負担割合が金額を割り切れない場合（33％など）でも、端数を都度切り捨てず、
+          <strong>月の合計を出す最後の段階までそのまま計算します。</strong>
+          こうしないと、本来ちょうど釣り合う月が数円ずれて「未精算」に見えてしまうためです。
+        </p>
+      </section>
+
+      <section>
+        <h2>ご利用にあたって</h2>
+        <ul class="doc-list">
+          <li>
+            記録はお使いの端末のブラウザにのみ保存されます。サーバーには送信されず、
+            相手の端末とも同期しません。精算額が出たら、口頭やメッセージで伝えてお使いください。
+          </li>
+          <li>ふたり向けのツールです。3人以上の割り勘には対応していません。</li>
+          <li>登録やログインは不要です。無料でお使いいただけます。</li>
+          <li>
+            ホーム画面に追加すると、アプリのように開けます。
+          </li>
+        </ul>
+      </section>
+    </div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

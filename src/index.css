@@ -835,3 +835,100 @@ textarea {
     border-right: 1px solid var(--color-border);
   }
 }
+/* ------------------------------------------------------------------
+   静的な解説セクション（index.html の #root の外に置いてある本文）。
+   JavaScriptを実行しなくても読める状態にするためのもので、
+   アプリ本体と同じ配色変数を使う。
+   ------------------------------------------------------------------ */
+
+.doc {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+.doc section + section {
+  margin-top: 2.5rem;
+}
+
+.doc h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.doc p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+}
+
+.doc strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.doc-steps,
+.doc-list {
+  margin: 0 0 0.75rem;
+  padding-left: 1.25rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+}
+
+.doc-steps li,
+.doc-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* 表は幅が足りないときだけ横スクロールさせる。ページ全体は横に伸ばさない */
+.doc-table-scroll {
+  overflow-x: auto;
+  margin: 1rem 0 0.5rem;
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.doc-caption {
+  caption-side: top;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.doc-table th,
+.doc-table td {
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  font-weight: 400;
+}
+
+.doc-table thead th {
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.doc-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.doc-sep {
+  padding: 0 0.25rem;
+  color: var(--color-text-secondary);
+}
+
+.doc-note {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
